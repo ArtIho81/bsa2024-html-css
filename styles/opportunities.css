@@ -1,0 +1,62 @@
+.opportunities__title-wrapper {
+  max-width: 744px;
+  margin-bottom: 136px;
+}
+
+.opportunities__title {
+  font-size: var(--header2);
+  margin-bottom: 15px;
+}
+
+.opportunities__subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.opportunity-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 110px;
+}
+
+.opportunity {
+  position: relative;
+  max-width: 345px;
+  max-height: 410px;
+  transform: skewY(var(--opportunity-angle));
+  padding: 205px 22px 80px 22px;
+  background: var(--purple-gradient);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.opportunity:hover {
+  background: var(--orange-gradient);
+}
+
+.opportunity__image {
+  position: absolute;
+  top: -115px;
+  left: 50%;
+  transform: translateX(-50%) skewY(calc(-1 * var(--opportunity-angle)));
+}
+
+.opportunity__title h3 {
+  font-size: var(--subheader);
+  text-align: center;
+  margin-bottom: 20px;
+  transform: skewY(calc(-1 * var(--opportunity-angle)));
+}
+
+.opportunity__title p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  transform: skewY(calc(-1 * var(--opportunity-angle)));
+}
