@@ -3,9 +3,15 @@
 @import "/styles/header.css";
 @import "/styles/intro.css";
 @import "/styles/info.css";
-@import '/styles/opportunities.css';
+@import "/styles/opportunities.css";
+@import "/styles/gallery.css";
+@import "/styles/subscribe.css";
+@import "/styles/footer.css";
 
 body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
   background-color: var(--background);
   font-family: "Righteous", sans-serif;
   font-weight: 400;
@@ -33,4 +39,5 @@ ul {
   max-width: 1144px;
   margin: 0 auto;
   padding: 0 40px;
+  position: relative;
 }
