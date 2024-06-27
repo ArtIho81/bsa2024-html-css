@@ -1,0 +1,62 @@
+@import "/styles/variables.css";
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.intro__content {
+  max-width: 625px;
+  padding: 50px;
+  border-radius: 25px;
+  background: var(--purple-gradient);
+}
+
+.intro__title {
+  font-size: var(--header1);
+}
+
+.intro__subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 52px;
+  margin-bottom: 30px;
+}
+
+.intro__subtitle-text {
+  font-size: var(--title);
+}
+
+.intro__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 22px;
+}
+
+.intro__button button {
+  width: 200px;
+  height: 60px;
+  font-size: var(--button);
+  padding: 10px 16px;
+  border-radius: 24px;
+}
+
+.intro__button-subscribe {
+  color: inherit;
+  background: var(--main-orange);
+  border: none;
+}
+
+.intro__button-watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--main-orange);
+  background: transparent;
+  border: 2px solid var(--main-orange);
+}

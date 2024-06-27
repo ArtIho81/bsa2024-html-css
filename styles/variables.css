@@ -13,4 +13,11 @@
     rgba(133, 100, 187, 0.67) 1.04%,
     rgba(102, 44, 197, 0.85) 88.02%
   );
+  --header1: 70px;
+  --header2: 48px;
+  --header3: 36px;
+  --subheader: 34px;
+  --title: 24px;
+  --button: 20px;
+  --button-small: 16px;
 }
