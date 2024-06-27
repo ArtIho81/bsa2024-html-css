@@ -1,0 +1,16 @@
+:root {
+  --background: rgba(26, 23, 61, 1);
+  --main-white: rgba(255, 255, 255, 1);
+  --main-orange: rgba(226, 83, 0, 1);
+  --main-pupple: rgba(81, 51, 166, 1);
+  --orange-gradient: radial-gradient(
+    50% 50% at 50% 50%,
+    #f5c292 23.96%,
+    #f19641 84.9%
+  );
+  --purple-gradient: linear-gradient(
+    180deg,
+    rgba(133, 100, 187, 0.67) 1.04%,
+    rgba(102, 44, 197, 0.85) 88.02%
+  );
+}
