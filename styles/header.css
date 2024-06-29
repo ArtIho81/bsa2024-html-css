@@ -5,6 +5,10 @@ header {
   left: 0;
   background: var(--background);
   z-index: 100;
+
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    top: 30px;
+  }
 }
 
 .header__wrapper {
@@ -20,6 +24,22 @@ header {
   gap: 20px;
   font-size: var(--header3);
   color: var(--main-orange);
+
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    font-size: calc(var(--title) + (36 - 24) * (100vw - 390px) / (768 - 390));
+    gap: calc(13px + (20 - 13) * (100vw - 390px) / (768 - 390));
+  }
+}
+
+.header__logo img,
+.menu__button img {
+  width: 60px;
+  height: 60px;
+
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    width: calc(40px + (60 - 40) * (100vw - 390px) / (768 - 390));
+    height: calc(40px + (60 - 40) * (100vw - 390px) / (768 - 390));
+  }
 }
 
 .nav-menu {

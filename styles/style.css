@@ -19,11 +19,6 @@ body {
   font-style: normal;
   color: var(--main-white);
   line-height: 1.24;
-  padding-top: 220px;
-
-  @media screen and (max-width: 768px) {
-    padding-top: 160px;
-  }
 }
 
 * {
