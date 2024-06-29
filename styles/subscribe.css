@@ -4,16 +4,30 @@
   background: var(--purple-gradient);
   border-radius: 25px;
   margin-bottom: 106px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    max-width: 100%;
+  }
 }
 
 .subscribe__title-wrapper {
   max-width: 684px;
   margin-bottom: 46px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    width: calc(558px + (684 - 558) * ((100vw - 768px) / (1144 - 768)));
+  }
 }
 
 .subscribe__title {
   font-size: var(--header2);
   margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    font-size: calc(
+      var(--header3) + (48 - 36) * ((100vw - 768px) / (1144 - 768))
+    );
+  }
 }
 
 .subscribe__subtitle {
@@ -28,6 +42,10 @@
   position: relative;
   max-width: 602px;
   max-height: 41px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    max-width: 100%;
+  }
 }
 
 .subscribe__email {
@@ -59,4 +77,11 @@
   position: absolute;
   right: -60px;
   bottom: -90px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    width: calc(313px + (529 - 313) * ((100vw - 768px) / (1144 - 768)));
+    top: 0;
+    right: 0;
+    transform: translate(0, -70%);;
+  }
 }

@@ -7,6 +7,12 @@
   font-size: var(--header2);
   text-align: end;
   margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    font-size: calc(
+      var(--header3) + (48 - 36) * ((100vw - 768px) / (1144 - 768))
+    );
+  }
 }
 
 .gallery__subtitle {
@@ -23,6 +29,10 @@
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 170px;
+
+  @media screen and (min-width: 768px) and (max-width: 1144px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .photo {

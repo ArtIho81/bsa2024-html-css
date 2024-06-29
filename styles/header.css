@@ -1,8 +1,17 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background: var(--background);
+  z-index: 100;
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
 }
 
 .header__logo {
@@ -16,6 +25,10 @@
 .nav-menu {
   display: inline-block;
   margin-right: 34px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .menu__link {
@@ -53,4 +66,14 @@ button.menu__link {
   border-radius: 24px;
   padding: 10px 16px;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menu__button {
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 }
